@@ -97,6 +97,10 @@ namespace PALplusExtractor
             DumpPattern(inputDir_v1_1, workingDir, set_v1_1, "PHILIPS_4_3_V1_1");
             DumpPattern(inputDir_v1_1, workingDir, set_v1_1, "PHILIPS_CAMERA_V1_1");
             DumpPattern(inputDir_v1_1, workingDir, set_v1_1, "PHILIPS_FILM_V1_1");
+            DumpPattern(inputDir_v1_1, workingDir, set_v1_1, "MOTION_DETECTION_V1_1");
+            DumpPattern(inputDir_v1_1, workingDir, set_v1_1, "HELPER_AMPLITUDE_V1_1");
+            DumpPattern(inputDir_v1_1, workingDir, set_v1_1, "HELPER_TIMING_V1_1");
+            DumpPattern(inputDir_v1_1, workingDir, set_v1_1, "ZONEPLATE_V1_1");
         }
 
         static void DumpPattern(string inputDir, string workingDir, PALplusGeneratorPromSet set, string pattern)
@@ -147,7 +151,7 @@ namespace PALplusExtractor
             var factor = 255 / ((float)max - (float)min);
 
             float adjusted = romData - (max - range);
-            adjusted = range - adjusted;
+            //adjusted = range - adjusted;
             adjusted *= factor;
 
             return (byte)adjusted;
