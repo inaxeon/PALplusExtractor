@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PALplusExtractor", "PALplusExtractor\PALplusExtractor.csproj", "{F02FA951-A813-4C37-B1F6-E47A8B6323EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F02FA951-A813-4C37-B1F6-E47A8B6323EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F02FA951-A813-4C37-B1F6-E47A8B6323EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F02FA951-A813-4C37-B1F6-E47A8B6323EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F02FA951-A813-4C37-B1F6-E47A8B6323EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {32310976-C620-4149-8FD4-601254E0D44E}
+	EndGlobalSection
+EndGlobal
