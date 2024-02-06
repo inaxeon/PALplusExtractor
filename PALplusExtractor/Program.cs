@@ -64,6 +64,7 @@ namespace PALplusExtractor
         static void Main()
         {
             string inputDir_v1_1 = @"C:\Dev\PTV_Preservation\PM5644\PM5644_85\001_1\ROM_Dumps";
+            string inputDir_v0_1 = @"C:\Dev\PTV_Preservation\PM5644\PM5644_85\000_1\ROM_Dumps";
             string workingDir = @"N:\Electronics\TV\PM5644\PM5644_85\PatternDumping\";
 
             var set_v1_1 = new PALplusGeneratorPromSet
@@ -94,6 +95,36 @@ namespace PALplusExtractor
                 Ch3_3FileName = "EPROM_4008_002_04461_CSUM_39AE.BIN",
             };
 
+            var set_v0_1 = new PALplusGeneratorPromSet
+            {
+                SegmentLsb0FileName = "EPROM_4008_002_03461_CSUM_4E21.BIN",
+                SegmentLsb1FileName = "EPROM_4008_002_03691_CSUM_C898.BIN",
+                SegmentMsb0FileName = "EPROM_4008_002_03471_CSUM_0F7F.BIN",
+                SegmentMsb1FileName = "EPROM_4008_002_03701_CSUM_3B83.BIN",
+
+                Ch1_0FileName = "EPROM_4008_002_03511_CSUM_7740.BIN",
+                Ch1_1FileName = "EPROM_4008_002_03521_CSUM_F7F8.BIN",
+                Ch1_2FileName = "EPROM_4008_002_03531_CSUM_B498.BIN",
+                Ch1_3FileName = "EPROM_4008_002_03541_CSUM_4ED8.BIN",
+
+                Ch1_2_0FileName = "EPROM_4008_002_03551_CSUM_6DEE.BIN",
+                Ch1_2_1FileName = "EPROM_4008_002_03561_CSUM_01BF.BIN",
+                Ch1_2_2FileName = "EPROM_4008_002_03571_CSUM_23B3.BIN",
+                Ch1_2_3FileName = "EPROM_4008_002_03581_CSUM_15A7.BIN",
+
+                Ch2_3_0FileName = "EPROM_4008_002_03631_CSUM_6699.BIN",
+                Ch2_3_1FileName = "EPROM_4008_002_03641_CSUM_2365.BIN",
+                Ch2_3_2FileName = "EPROM_4008_002_03651_CSUM_EFB0.BIN",
+                Ch2_3_3FileName = "EPROM_4008_002_03661_CSUM_A22E.BIN",
+
+                Ch3_0FileName = "EPROM_4008_002_03591_CSUM_955E.BIN",
+                Ch3_1FileName = "EPROM_4008_002_03601_CSUM_A33C.BIN",
+                Ch3_2FileName = "EPROM_4008_002_03611_CSUM_0693.BIN",
+                Ch3_3FileName = "EPROM_4008_002_03621_CSUM_2469.BIN",
+            };
+
+            DumpPattern(inputDir_v0_1, workingDir, set_v0_1, "PHILIPS_FILM_V0_1");
+            DumpPattern(inputDir_v0_1, workingDir, set_v0_1, "PHILIPS_CAMERA_V0_1");
             DumpPattern(inputDir_v1_1, workingDir, set_v1_1, "PHILIPS_4_3_V1_1");
             DumpPattern(inputDir_v1_1, workingDir, set_v1_1, "PHILIPS_CAMERA_V1_1");
             DumpPattern(inputDir_v1_1, workingDir, set_v1_1, "PHILIPS_FILM_V1_1");
